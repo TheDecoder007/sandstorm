@@ -1,5 +1,5 @@
-/* eslint-disable @typescript-eslint/no-floating-promises */
 /* eslint-disable prettier/prettier */
+/* eslint-disable @typescript-eslint/no-floating-promises */
 import * as utils from "@dcl/ecs-scene-utils";
 import { movePlayerTo } from "@decentraland/RestrictedActions";
 import { hud } from "dcl-builder-hud";
@@ -32,7 +32,7 @@ fourthFloor.addComponent(
 hud.attachToEntity(fourthFloor);
 
 let hideFourth = new Entity("hideFourth");
-hideFourth.addComponent(new BoxShape()).withCollisions = false;
+// hideFourth.addComponent(new BoxShape()).withCollisions = false;
 hideFourth.addComponent(
   new Transform({
     position: new Vector3(16, 24, 24),
